@@ -1,0 +1,62 @@
+/*
+    selector:pseudoclase{
+        propiedad : valor;
+    }
+*/
+
+.link a{
+    color: tomato;
+    font-size: 30px;
+}
+
+.link a:hover{
+    color: turquoise;
+}
+
+.link a:active{
+    color: blueviolet;
+}
+
+.link a:visited{
+    color: violet;
+}
+
+.form input{
+    width: 200px;
+    height: 30px;
+}
+
+.form input:focus{
+    background-color: blue;
+    color: orange;
+}
+/*============*/
+.menu input + ul{
+    display: none;
+    background-color: aqua;
+}
+
+.menu input:checked +ul{
+    display: block;
+}
+
+.hijos p:not(.noColor){
+    font-weight: 700;
+    color: blue;
+}
+.hijos p:nth-child(3){
+    background-color: aquamarine;
+}
+
+.hijos p:first-child{
+    background-color: orange;
+}
+.hijos p:last-child{
+    background-color: orange;
+}
+
+
+div h3::after{
+    content: 'Antes....';
+    background-color: aqua;
+}

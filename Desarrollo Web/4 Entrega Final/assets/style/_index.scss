@@ -1,0 +1,189 @@
+@import '_var';
+/*index*/
+.banner, .index{
+    &-ppal{
+        @include banner-set($banner-size);
+        background-image: url(../img/index-tierra.jpg);
+        &-txt{
+            background-color: $color_bg_banner;
+            text-align: center;
+            width: 100%;
+            h1{
+                font-size: 35px;
+                color: $color_white;
+            }
+            p{
+                font-size: 20px;
+                color: $color_white;
+            }
+        }
+    }  
+}
+@include banner-responsive;
+
+/*noticia destacada*/
+.banner-dest{
+    h2{
+        text-align: center;
+        margin: 2% 0;
+        font-size: 30px
+    }
+    &-ppal{
+        @include banner-set($banner-size);
+        background-image: url(../img/bg.jpg);
+    }  
+    &-txt{
+        text-align: initial;
+        width: 70%;
+        margin: 30px;
+        h3{
+            font-size: 35px;
+            color: $color_white;
+        }
+        p{
+            color: $color_white;
+            font-size: 20px;
+            width: 50%;
+        }
+    }
+}
+@media (max-width: map-get($_breakpoints, md)){
+    .banner-dest-txt p{
+        display: none;
+    }
+}
+
+/* index - noticias de la semana   */
+.article-week{ 
+    h2{
+    text-align: center;
+    margin: 2% 0;
+    font-size: 30px;
+    }
+}
+
+.margin{
+    margin: 10px 0;
+}
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    &-body{
+        text-decoration: none;
+        color: $color_black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .card-title{
+            font-size: 20px;
+            color: $color_sec;
+        }
+        .card-text{
+            font-size: 15px;
+        }
+        .card-date{
+            font-size: 15px;
+            color: grey;
+            margin: 0;
+        }
+    }
+    &-img{
+        max-height: 300px;
+    }
+}
+.row{
+    margin: 10px 0;
+}
+@media (max-width: map-get($_breakpoints, sm)){
+    .card-txt-container{
+        h5{
+            font-size: 30px;
+        }
+    }
+}
+/*index-formulario*/
+.formulario{
+    margin-top: 30px;
+    form{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        legend{
+            text-align: center;
+            margin: 5px 50px;
+            color: $color_white;
+        }
+        
+    }
+}
+/*form*/
+.form-container-index{
+    margin: 0 auto;
+    overflow:hidden;
+
+    background: {
+        repeat: no-repeat;
+        position:center;
+        image: url(../img/index-form.jpg);
+        size: cover;
+    }
+}
+.container-switch label{
+    color: $color_white;
+}
+.form{
+    &-floating{
+        input{
+            background-color: #ffffff97;
+            border: none;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+    }
+    &-floating-txt{
+        color: $color_black;
+    }
+    &-inputs{
+        background-color: #00000047;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+.btn-form{
+    margin-bottom: 20px;
+    background-color: $color_black;
+    border:solid 1px $color_sec;
+    border-radius: 30px;
+    color: $color_white;
+    padding: 10px;
+    margin: 10px 34%;
+}
+
+/*banner shop*/
+.banner-shop{
+    &-ppal{
+        @include banner-set($banner-size);
+        background-image: url(../img/Index-shop.jpg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+    &-txt{
+        text-align: center;
+        width: 100%;
+        h3{
+            font-size: 35px;
+            color: $color_white;
+        }
+    }
+}
+

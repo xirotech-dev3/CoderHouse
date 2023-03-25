@@ -1,0 +1,43 @@
+@import '_var';
+/*footer*/
+.footer{
+    background-color: $color_ppal;  
+    width: 100%;
+    margin-top: 60px;
+    &-container{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 0 ;
+        li{
+            display: inline;
+            margin: 15px 0;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            &:hover{
+                color: $color_sec;
+            }
+        }
+        
+    }
+    &-logo img{
+        width: 100px;
+        padding: 10px;
+    }
+    &-social img{
+        width: 50px;
+    }
+    &-tradeMark span{
+        color: $color_white;
+    }
+}
+//680px
+@media (max-width: map-get($_breakpoints, md)){
+    .footer-container{
+        flex-direction: column;
+    }
+}

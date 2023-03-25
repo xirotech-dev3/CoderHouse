@@ -1,0 +1,56 @@
+
+h2{
+    color: #c0c0c0;
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    color: #c0c0c0;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+p{
+    color: #c0c0c0;
+    font-size: 20px;
+    margin: 0 5%;
+}
+section{
+    margin-bottom: 60px;
+}
+/*problema*/
+.problema{
+    padding-top: 170px;
+}
+.container-pr{
+    display: flex;
+    margin: 20px 20%;
+    align-items: center ;
+}
+.container-pr p{
+    margin-left: 15px;
+}
+.container-pr img{
+    height: 400px;
+    border-radius: 30px;
+}
+/*concorde*/
+.container-cc{
+    display: flex;
+    align-items: center;
+    margin: 0 15%;
+}
+.img-concorde{
+    width: 350px;
+    border-radius: 30px;
+}
+/*solucion*/
+.container-sol{
+    display: flex;
+    align-items: center;
+    margin: 0 15%;
+}
+.container-sol img{
+    width: 300px;
+    border-radius: 20px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+    <body>
+    
+        <h1>Formularios</h1>
+
+        <form action="enviar.php" method="get" >
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre" >Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingese su nombre">
+                <br><br>
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail">
+                <br><br>
+            </fieldset>
+
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass">
+            <br><br>
+
+            <label for="multi">Deje su mensaje</label>
+            <textarea name="multi" id="" cols="30" rows="5"></textarea>
+            <br><br>
+
+            <label for="adjunto">Adjuntar:</label>
+            <input type="file" id="adjunto">
+            <br><br>
+
+            <label for="curso">Te gusta el curso?</label>
+            <input type="radio" name="curso" id="si">Si
+            <input type="radio" name="curso" id="no">No
+            <br><br>
+
+            <label for="acepta">Acepta?</label>
+            <input type="checkbox" name="acepta" id="terycond">Ter y Cond.
+            <input type="checkbox" name="acepta" id="new">Rcibe news.
+            <br><br>
+
+            <label for="paises">Elija el país:</label>
+            <select name="paises" id="paises">
+                <option value="arg">Argentina</option>
+                <option value="chi">Chile</option>
+                <option value="per">Perú</option>
+            </select>
+            <br><br>
+        
+
+            <input type="submit" id="Enviar ahora">
+            <input type="reset" id="Borrar todo">
+            <input type="button" id="Para JS">
+            <br><br>
+
+        </form>
+
+    </body>
+</html>

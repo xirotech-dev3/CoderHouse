@@ -1,0 +1,49 @@
+@import '_var';
+/*  _shop   */
+.shop{
+    &-ppal{
+        @include banner-set(400px);
+        background-image: url(../img/shop-banner.jpg);
+        &-txt{
+            background-color: $color_bg_banner;
+            text-align: center;
+            width: 100%;
+            h1{
+                margin: 10px;
+                font-size: 30px;
+                color: $color_white;
+            }
+        }
+    }
+    &-items-container{
+        margin: 20px auto;
+    }
+    &-ofertas{
+        h2{
+            text-align: center;
+        }
+
+    }  
+}
+@include banner-responsive;
+
+._col{
+    margin: 10px auto;
+}
+.card{
+    &-container{
+        text-decoration: none;
+        color: $color_black;
+    }
+    &-shop{
+        text-align: center;
+    }
+    &-body{
+        h5{
+            font-size: 25px;
+        }
+        h6 , p{
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/*h2 span{
+    background-color: greenyellow;
+}*/
+
+/*NORMALIZE*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Te respeta el tamaño real de la caja, sumando el padding PARA ADENTRO*/
+}
+
+.boxModel{
+    width: 400px;
+    height: 150px;
+    background-color: greenyellow;
+    border: 10px dashed red;
+    border-top-color: black ;
+
+    /*
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    */
+        /*TOP-RIGTH-BOTTOM-LEFT*/
+    padding: 20px 30px 40px 50px;
+    margin: 50px auto 25px;
+    overflow: auto; /*Que hace con el contenido excedente de la caja, respeta el tamaño de la caja y no del contenido*/
+}
+
+.boxModel p{
+    font-size: 21px;
+}
+
+
+.display h3{
+    background-color: tomato;   
+    display: inline;
+}
+.display h4{
+    background-color: blueviolet;
+    color: white;
+    display: inline;
+}
+.display a{
+    background-color: greenyellow;
+    display: block;
+    margin-bottom: 10px;
+}
+.display h2{
+    visibility: hidden;
+    display: none;
+    
+}

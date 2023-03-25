@@ -1,0 +1,87 @@
+//variables
+
+//tamaño de pantalla
+$_breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px, 
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+$banner-size: 500px;
+
+//colores
+$color_ppal: #1d2951;
+$color_sec: #0291FF;
+$color_white: #ffffff;
+$color_black: #000000;
+$color_red: #ff0000;
+$color-grey: #808080;
+//color: #0f97fc;
+$color_bg_banner:#3c33339c;
+
+//mixin
+@mixin banner-set($_banner-size) {
+  height: $_banner-size;
+  background: {
+      repeat: no-repeat;
+      size:cover;
+      position:center;
+  };
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  align-items: flex-end;
+}
+
+@mixin banner-responsive {
+    @media (min-width: map-get($_breakpoints, md)){
+      .banner-ppal{
+          height: 400px;
+          &-txt{
+              h1{
+                  font-size: 40px;
+              }
+          } 
+      }
+  }
+  @media (min-width: map-get($_breakpoints, lg)){
+      .banner-ppal{
+          height: 600px;
+          &-txt{
+              h1{
+                  font-size: 50px;
+              }
+          }
+      } 
+  }
+}
+.btn{
+    &-container{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+    }
+    &-txt{
+        border:solid 2px $color_sec;
+        border-radius: 30px;
+        background-color: $color_black;
+        padding: 10px;
+        color: $color_white;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        p{
+            margin: 0;
+        }
+        &:hover{
+            background-color: $color_white;
+            a, p{
+                color: $color_black;
+            }
+        }
+    }
+}

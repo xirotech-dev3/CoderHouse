@@ -1,0 +1,115 @@
+
+/*=======BANNER======*/
+
+.banner{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.banner-txt-container{
+    background-color: #9a9c9d7d;
+    position: absolute;
+    top: 530px;
+    left: 53%;
+    width: 45%;
+    padding: 20px;
+}
+.banner-txt-container h1{
+    font-size: 50px;
+    color: #ffff00;
+}
+.banner-txt-container p{
+    font-size: 30px;
+    color: #000000;
+}
+/*=======ARTICLES======*/
+.articles-container{
+    display: flex;
+    margin-bottom: 40px;
+}
+.article{
+    width: 33.33%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.article p{
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    padding: 0 40px;
+    font-weight: 500;
+    text-align: center;
+}
+.article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.article img:hover{
+    transform: scale(1.2);
+}
+.artemis{
+    background-color: #ffffff;
+}
+.moon p{
+    top: 80%;
+    color: #000000;
+}
+.sound p{
+    top: 70%;
+    color: #424138;
+    
+}
+.artemis p{
+    top: 10%;
+    color: #049aeb;
+}
+
+/*=======FORM=====*/
+.formulario{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.formulario form{
+    width: 25%;
+    border: solid 2px #0291FF;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    padding: 30px;
+}
+.formulario form legend{
+    margin-bottom: 30px;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-inputs{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-inputs input{
+    margin-bottom: 20px;
+    background-color: #000000;
+    border:solid 1px #0291FF;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: crosshair;
+}
+.formulario img{
+    width: 25%;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+}
+
+
+

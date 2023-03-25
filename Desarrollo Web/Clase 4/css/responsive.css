@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-responsive{
+    background-color: greenyellow;
+    padding: 20px;
+    height: auto;
+}
+
+/*resoinsive*/
+
+@media (max-width: 576px){ /* max = hasta...*/
+    .box-responsive{
+        background-color: blue;
+        color: white;
+    }
+    .box-responsive p{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){ /*min = desde...*/
+    .box-responsive{
+        background-color: tomato;
+        font-size: 30px;
+    }
+    .box-responsive h2{
+        background-color: white;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1400px){ /*desde y hasta*/
+    .box-responsive{
+        width: 100%;
+        max-width: 1200px;
+        background-color: black;
+        color: white;
+    }
+}

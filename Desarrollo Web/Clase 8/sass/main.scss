@@ -1,0 +1,141 @@
+
+//vars
+$boxWidth: 300px;
+$boxColor: orange ;
+
+.boxOperaciones{
+    background-color: $boxColor ;
+    padding: 10px;
+    width: $boxWidth * ( 2 );
+}
+
+/* Condicionales*/
+$colorTitle: dark;
+
+.boxCondicional{
+    padding: 10px;
+    font-size: 30px;
+    @if $colorTitle == dark{
+        color: white;
+        background-color: black;
+    }@else if $colorTitle == light{
+        color: darkgray;
+        background-color: wheat;
+        border: 1px solid black;
+    }@else{
+        color: blue;
+        background-color: violet;
+    }
+}
+
+/*Blucles*/
+/*   @for     */
+@for $i from 1 through 6 {
+    .h-#{$i}{
+        font-size: 12px * $i;
+    }
+}
+@for $i from 1 to 12 {
+    .col-#{$i}{
+        width: 100% /$i;
+    }
+}
+
+/*  @each   */
+@each $background in red, green, blue, orange, tomato {
+    .bg-#{$background} {
+        background-color: $background;
+    }
+}
+
+/*   Mapas   */
+$red-social: (
+    tw: skyblue,
+    fb: blue,
+    ig: blueviolet,
+    tk: black,
+
+) ;
+@each $nombre, $valor in $red-social {
+    .icon__#{$nombre}{
+        color: $valor;
+    }
+}
+$headings: (
+    h1: 60px,
+    h2: 48px,
+    h3: 42px,
+);
+@each $title, $size in $headings {
+    .headings__#{$title}{
+        font-size: $size;
+    }
+}
+
+$colores:(
+    primary: tomato ,
+    base: black,
+    back: aqua,
+);
+.boxMap{
+    padding: 10px;
+    background: map-get($colores , base );
+    h2{
+        color: map-get($colores, primary );
+    }
+}
+/*  Extend  */
+.bloqueTexto{
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 700;
+    font-style: normal;
+    font-family: sans-serif;
+}
+.bloqueTexto--center{
+    @extend .bloqueTexto;
+    text-align: center;
+}
+.bloqueTexto--right{
+    @extend .bloqueTexto;
+    text-align: right;
+}
+/*  Mixins  */
+@mixin btn {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 25px;
+}
+.btn--default{
+    @include btn;
+    background-color: transparent;
+}
+.btn--danger{
+    @include btn;
+    background-color: tomato;
+}
+.btn--exito{
+    @include btn;
+    background-color: greenyellow;
+    &:hover{
+        background-color: green;
+    }
+}
+@mixin btn-color($texto, $fondo) {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 25px;
+    color: $texto;
+    background-color: $fondo;
+}
+.btn--base{
+    @include btn-color(white,red )
+}

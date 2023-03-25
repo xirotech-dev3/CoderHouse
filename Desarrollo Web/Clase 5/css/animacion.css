@@ -1,0 +1,30 @@
+
+@keyframes mi-efecto {
+   0%{
+        width: 300px;
+        background-color: greenyellow;
+        height: 150px;
+   }
+   50%{
+        width: 150px;
+        background-color: tomato;
+        height: 300px;
+        transform: rotate(45deg);
+   } 
+   100%{
+        width: 100%;
+        background-color: cyan;
+        height: 50px;
+   }
+}
+
+.boxAnimate{
+    border: 2px solid black;
+    background-color: aqua;
+    /*animation: mi-efecto;
+    animation-duration: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: lineal;*/
+    animation: mi-efecto 2s 0s 1 linear;
+}

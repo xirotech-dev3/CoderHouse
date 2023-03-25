@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia y Cascada</title>
+    <!--HERENCIA Y CASCADA-->
+    <style>
+        * { /* reset básico */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            color: red;
+        }
+        h2 {
+            color: red;
+        }
+        h2 {
+            color: blue;
+        }
+        h3 {
+            background-color: aqua;
+        }
+        #poder {
+            background-color: orange;
+        }
+        .poder {
+            background-color: greenyellow !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p> <!-- p rojo -->
+    </div>
+
+    <br><hr><br>
+
+    <h2>Esto es cascada.</h2>
+
+    <br><hr><br>
+
+    <h3 id="poder" class="poder">El poder de CSS</h3>
+
+
+
+
+    
+</body>
+</html>

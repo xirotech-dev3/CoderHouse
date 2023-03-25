@@ -1,0 +1,51 @@
+/*selector{
+    propiedad:valor;
+}*/
+
+section{
+    background-color: blueviolet;
+}
+section h1{
+    color: greenyellow;
+}
+section p{
+    color: orange;
+}
+/* class */
+
+div.noticia {
+    background-color: aqua;
+}
+div h3.titulo {
+    background-color: black;
+    color: white;
+}
+.noticia .texto {
+    color: blue;
+}
+.texto.destacado {
+    background-color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.muy-grande {
+    font-size: 90px;
+}
+
+/* ID */
+
+#productos {
+    border: 2px solid red;
+    padding: 20px;
+    background: greenyellow;
+}
+#productos.nuevos div h4 {
+    background-color: violet;
+}
+#servicios {
+    background-color: black;
+}
+#servicios .titulo {
+    color: orange;
+}

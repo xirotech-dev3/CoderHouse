@@ -1,0 +1,50 @@
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 20px;
+    margin: 0 5%;
+    font-weight: 600;
+}
+section{
+    margin-bottom: 60px;
+}
+/*volvemos*/
+.volvemos{
+    padding-top: 170px;
+}
+.container-vl{
+    margin: 20px 20%;
+}
+.container-vl p{
+    margin-bottom: 30px;
+}
+.container-vl iframe{
+    margin:0 20% ;
+}
+/*porque la luna*/
+.container-luna{
+    margin: 20px 20%;
+}
+.container-luna p{
+    margin-bottom: 30px;
+}
+.container-luna iframe{
+    margin:0 20% ;
+}
+/*de la luna a la tierra*/
+.container-marte{
+    display: flex;
+    align-items: center;
+    margin: 0 15%;
+}
+.container-marte img{
+    width: 300px;
+    border-radius: 20px;
+}

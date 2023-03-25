@@ -1,0 +1,37 @@
+#grid-area{
+    display: grid;
+    grid-template-areas: 
+        "menu logo logo" 
+        "menu cont banner"
+        "menu cont banner"
+        "menu info banner"
+        "pie pie pie";
+    gap: 5px;
+    height: 100vh;
+    grid-template-rows: 75px auto auto auto 50px;
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: logo;
+}
+nav{
+    background-color: pink;
+    grid-area: menu ;
+}
+main{
+    background-color: greenyellow;
+    grid-area: cont;
+}
+section{
+    background-color: tomato;
+    grid-area: info;
+}
+aside{
+    background-color: cornflowerblue;
+    grid-area: banner;
+}
+footer{
+    background-color: darkgoldenrod;
+    grid-area: pie;
+}

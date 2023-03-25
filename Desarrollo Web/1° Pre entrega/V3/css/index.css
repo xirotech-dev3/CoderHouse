@@ -1,0 +1,357 @@
+/*===NORMALIZE==*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*=======BARRA DE NAVEGACION======*/
+nav{
+    background-color: #1d2951;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+}
+.nav-logo img{
+    width:50px;
+    margin: 15px 0;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.nav-container li{
+    display: inline;
+}
+.nav-container a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+.nav-container a:hover{
+    color: #0f97fc;
+}
+.nav-social img{
+    width: 40px;
+    margin-left: 10px;
+}
+.nav-shopCart img{
+    width: 40px;
+}
+/*=======FOOTER========*/
+footer{
+    background-color: #1D2951;  
+    width: 100%;
+    margin-top: 60px;
+}
+.footer-container{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-container li{
+    display: inline;
+    margin: 15px 0;
+}
+.footer-container a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-container a:hover{
+    color: #0f97fc;
+}
+.footer-logo img{
+    width: 100px;
+    padding: 10px;
+}
+.footer-social img{
+    width: 50px;
+}
+.footer-tradeMark span{
+    color: #ffffff;
+}
+
+
+/*=======INDEX.HTML===*/
+/*=======BANNER======*/
+
+.banner{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-image: url(../img/index-tierra.jpg);
+}
+.banner-txt-container{
+    margin: 340px 15%;
+    width: 70%;
+}
+.banner-txt-container h1{
+    font-size: 60px;
+    color: #fff;
+}
+.banner-txt-container p{
+    font-size: 20px;
+    color: #fff;
+}
+/*NOTICIAS DE LA SEMANA*/
+.article-week{
+    margin-bottom: 70px;
+}
+.article-week h2{
+    text-align: center;
+    margin: 60px 15%;
+    font-size: 50px;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.card-item{
+    width: 35%;
+    margin-right: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-item a{
+    text-decoration: none;
+}
+.card-item h3{
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+}
+.card-item p{
+    text-align: center;
+    font-size: 15px;
+}
+.card-item img{
+    width: 100%;
+    border-radius: 15px;
+}
+.card-item p{
+    margin: 0 20%;
+    color: #000;
+}
+.card-X4-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    box-shadow: none;
+}
+.small{
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 10px;
+}
+.small h3{
+    font-size: 20px;
+}
+.big:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.small:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.index-art-week{
+    background-color: #000;
+    border:solid 1px #0291FF;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+.art-index-btn{
+    margin-top: 30px;
+    margin-left: 45%;
+}
+/*====FORMULARIO====*/
+.formulario{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.formulario form{
+    width: 30%;
+    border: solid 2px #0291FF;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    padding: 30px;
+}
+.formulario form legend{
+    margin-bottom: 30px;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-inputs{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-inputs input{
+    margin-bottom: 20px;
+    background-color: #000;
+    border:solid 1px #0291FF;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px;
+}
+.formulario img{
+    width: 30%;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+}
+
+/*=======NOTICIAS.HTML======*/
+/*=======ARTICLES======*/
+article h2{
+    font-size: 40px;
+    margin: 30px 0 30px 15%;
+}
+.article-item{
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    margin-bottom: 40px ;
+    border: solid 2px #0291FF;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.article-img-container{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+.article-item img{
+    height: 100%;
+}
+.article-txt-container{
+    width: 70%;
+    margin-left: 5%;
+}
+.article-txt-container h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.article-button{
+    border:solid 2px #0291FF;
+    border-radius: 30px;
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+}
+.article-button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*=====TIERRALUNA.HTML========*/
+.article-titulo-container{
+    text-align: center;
+    margin: 60px 0 ;
+}
+.article-titulo-container h1{
+    font-size: 60px;
+}
+.article-titulo-container h2{
+    font-size: 40px;
+}
+.noticia-article h3{
+    font-size: 30px;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+.noticia-article-container{
+    margin: 30px 10%;
+    display: flex;
+    align-items: center;
+}
+.noticia-article-container img{
+    border-radius: 30px;
+    width: 300px;
+}
+.noticia-article-container p{
+    margin: 30px;
+    color: #000;
+    font-size: 20px;
+}
+.noticia-article-txt-container{
+    display: block;
+}
+.video-container{
+    text-align: center;
+}
+
+
+/*===========NOSOTROS=========*/
+.nosotros-banner h1{
+    font-size: 80px;
+    position: absolute;
+    top: 300px;
+    left: 30%;
+    z-index: 1;
+    color: #3f6afb;
+}
+.nosotros-banner{
+    width: 100%;
+    overflow: hidden;
+}
+.nosotros-banner img{
+    position: relative;
+    width: 100%;
+}
+.nosotros p{
+    margin: 50px 10%;
+    font-size: 30px;
+}
+
+.nosotros h2{
+    font-size: 50px;
+    text-align: center;
+}
+.nosotros h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+/*======SHOP======*/
+.shop h1{
+    color: #011c49;
+}
+
+.shop-ofertas-container{
+    width: 70%;
+    margin: 30px 15%;
+    display: flex;
+}
+.shop-ofertas-container h4{
+    text-decoration: line-through;
+    color: red;
+    text-align: center;
+}
+.shop-ofertas h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 60px;
+}
+.shop-items{
+    
+    width: 25%;
+}

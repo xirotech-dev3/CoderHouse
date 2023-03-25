@@ -1,0 +1,207 @@
+.boxOperaciones {
+  background-color: orange;
+  padding: 10px;
+  width: 600px;
+}
+
+/* Condicionales*/
+.boxCondicional {
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+}
+
+/*Blucles*/
+/*   @for     */
+.h-1 {
+  font-size: 12px;
+}
+
+.h-2 {
+  font-size: 24px;
+}
+
+.h-3 {
+  font-size: 36px;
+}
+
+.h-4 {
+  font-size: 48px;
+}
+
+.h-5 {
+  font-size: 60px;
+}
+
+.h-6 {
+  font-size: 72px;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.3333333333%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 20%;
+}
+
+.col-6 {
+  width: 16.6666666667%;
+}
+
+.col-7 {
+  width: 14.2857142857%;
+}
+
+.col-8 {
+  width: 12.5%;
+}
+
+.col-9 {
+  width: 11.1111111111%;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-11 {
+  width: 9.0909090909%;
+}
+
+/*  @each   */
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-tomato {
+  background-color: tomato;
+}
+
+/*   Mapas   */
+.icon__tw {
+  color: skyblue;
+}
+
+.icon__fb {
+  color: blue;
+}
+
+.icon__ig {
+  color: blueviolet;
+}
+
+.icon__tk {
+  color: black;
+}
+
+.headings__h1 {
+  font-size: 60px;
+}
+
+.headings__h2 {
+  font-size: 48px;
+}
+
+.headings__h3 {
+  font-size: 42px;
+}
+
+.boxMap {
+  padding: 10px;
+  background: black;
+}
+.boxMap h2 {
+  color: tomato;
+}
+
+/*  Extend  */
+.bloqueTexto, .bloqueTexto--right, .bloqueTexto--center {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 700;
+  font-style: normal;
+  font-family: sans-serif;
+}
+
+.bloqueTexto--center {
+  text-align: center;
+}
+
+.bloqueTexto--right {
+  text-align: right;
+}
+
+/*  Mixins  */
+.btn--default {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.btn--danger {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-radius: 25px;
+  background-color: tomato;
+}
+
+.btn--exito {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-radius: 25px;
+  background-color: greenyellow;
+}
+.btn--exito:hover {
+  background-color: green;
+}
+
+.btn--base {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-radius: 25px;
+  color: white;
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */

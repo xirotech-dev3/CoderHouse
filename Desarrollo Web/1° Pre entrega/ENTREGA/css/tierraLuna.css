@@ -1,0 +1,57 @@
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+}   
+h2, h3{
+    color:#0012d4;
+}
+p{
+    color: #2521a9;
+    font-size: 20px;
+    margin: 0 5%;
+    font-weight: 600;
+}
+section{
+    margin-bottom: 60px;
+}
+/*ultima frontera*/
+.frontera{
+    padding-top: 170px;
+}
+.container-frontera{
+    display: flex;
+    margin: 20px 20%;
+}
+.container-frontera p{
+    font-size: 20px;
+    margin-left: 15px;
+}
+/*Guerra fria*/
+.container-gf{
+    display: flex;
+    align-items: center;
+    margin: 0 15%;
+}
+.gf-img-jfk, .gf-img-urss{
+    width: 300px;
+    border-radius: 30px;
+}
+/*primer paso*/
+.saturnV{
+    width: 60%;
+    margin: 0 20%;
+}
+.container-pp{
+    display: flex;
+    align-items: center;
+    margin: 0 15%;
+}
+.container-pp img{
+    width: 300px;
+    border-radius: 20px;
+}

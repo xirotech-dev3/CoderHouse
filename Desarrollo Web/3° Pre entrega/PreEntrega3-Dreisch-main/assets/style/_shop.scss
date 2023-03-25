@@ -1,0 +1,55 @@
+@import '_var';
+/*  _shop   */
+.shop{
+    &-ppal{
+        @include banner-set(400px);
+        align-items: center;
+        background-image: url(../img/shop-banner.jpg);
+        &-txt{
+            background-color: $color_bg_banner;
+            text-align: center;
+            margin: 5%;
+            h1{
+                font-size: 30px;
+                color: $color_white;
+            }
+        }
+    }
+    &-items-container{
+        margin: 20px auto;
+    }
+    &-ofertas{
+        h2{
+            text-align: center;
+        }
+
+    }  
+}
+@include banner-responsive;
+@media (max-width: map-get($_breakpoints, lg)){
+    .mobile-disable-ofertas{
+        display: none;
+    }
+}
+
+.card{
+    &-container{
+        text-decoration: none;
+        color: $color_black;
+    }
+    &-shop{
+        text-align: center;
+    }
+    &-body{
+        h5{
+            font-size: 25px;
+        }
+        h6 , p{
+            font-size: 20px;
+        }
+    }
+}
+.oferta{
+    text-decoration: line-through;
+    color: $color_red;
+}

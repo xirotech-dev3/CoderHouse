@@ -1,0 +1,67 @@
+
+/*GRID*/
+#grid-container{
+    /*height: 100vh; */
+    background-color: aqua;
+    display: grid;
+    padding: 5px;
+    /*grid-template-columns: 100px auto 100px;*/
+    /*grid-template-columns: 2fr 1fr 1fr; fr <- fraccion*/
+    /*grid-template-columns: repeat(6, 1fr);*/
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 50px 100px;
+    gap: 10px;
+}
+/*el ID esta para que si tengo mas grid-item, estos solo respondan
+al contenedor padre #grid-container*/
+#grid-container .grid-item{
+    background-color: orange;
+    padding: 5px;
+}
+#grid-container .grid-item.uno{
+    background-color: blueviolet;
+    color: white;
+    grid-column: 1/3;/*va desde la "calle" 1 a la 3*/
+    grid-row: 1/2;
+}
+#grid-container .grid-item.dos{ /*.grid-item.dos estan pegadas porque .dos no es HIJA de .grid-item, estan en el mismo nivel, si yo lo dejo ".grid-item .dos" diria que grid-item es el padre de .dos y no es asi*/
+    background-color: greenyellow;
+    border: 2px solid #000;
+    grid-row: 1/3;/*<- va desde la "calle" 1 a la 3*/
+    grid-column: 3/4;
+}
+.grid-box{
+    background-color: aquamarine;
+   
+    padding: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    height: 300px;
+   /* width: 500px;*/
+
+    gap: 10px;  /*<-primer valor ejeX, segundo valor ejeY*/
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 50px 50px;
+
+    /*siempre desde el contenedor padre*/
+    justify-items: stretch;/*<-alineacion horizontal*/
+    align-items: stretch;/*<-alineacion vertical*/
+
+    justify-content: center;
+    align-content: center;
+
+}
+
+.grid-box .grid-hijo{
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+}
+.grid-box .grid-hijo.box-uno {
+    background-color: greenyellow;
+    color: #000;
+    border: 1px solid  black;
+    
+    justify-self: center;
+    align-self: center;
+}

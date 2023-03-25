@@ -1,0 +1,174 @@
+@import '_var';
+/*index*/
+.banner, .index{
+    &-ppal{
+        @include banner-set($banner-size);
+        align-items: flex-end;
+        background-image: url(../img/index-tierra.jpg);
+        &-txt{
+            background-color: $color_bg_banner;
+            text-align: center;
+            margin: 5%;
+            h1{
+                font-size: 30px;
+                color: $color_white;
+            }
+            p{
+                font-size: 15px;
+                color: $color_white;
+            }
+        }
+    }  
+}
+@include banner-responsive;
+
+/* index - noticias de la semana   */
+.article-week h2{
+    text-align: center;
+    margin: 2% 0;
+}
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 96%;
+    &-img-overlay{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    &-txt-container{
+        background-color: #000000b3;
+        width: 100%;
+        h5{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    &-container{
+        text-decoration: none;
+        color: $color_black;
+    }
+    &-body{
+        text-decoration: none;
+        color: $color_black;
+    }
+}
+.link-btn{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.article-button{
+    border:solid 2px $color_sec;
+    border-radius: 30px;
+    background-color: $color_black;
+    padding: 10px;
+    color: $color_white;
+}
+.art-index-btn p{
+    margin: 0;
+}
+
+@media (min-width: map-get($_breakpoints, sm)) and (max-width: map-get($_breakpoints, md)){
+    .card-small p{
+        display: none;
+    }
+}
+@media (max-width: map-get($_breakpoints, sm)){
+    .mobile-disable{
+        display: none;
+    }
+    .card-txt-container{
+        h5{
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: map-get($_breakpoints, lg)){
+    .card{
+        margin: 10px 0;
+    }
+
+}
+@media (min-width:map-get($_breakpoints, sm))and (max-width:  map-get($_breakpoints, md)){
+    .card-big{
+        width: 82.9%;
+    }
+ }
+@media (min-width: map-get($_breakpoints, md)){
+    .card-small{
+        margin: 5px auto;
+    }
+    .card-big{
+        height: 80%;
+        margin: 10% 0;
+    }
+}
+/*index-formulario*/
+.formulario{
+    margin-top: 30px;
+    form{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        legend{
+            text-align: center;
+            margin: 5px 50px;
+            color: $color_white;
+        }
+        
+    }
+}
+
+.form-container{
+    margin:0 auto;
+    overflow:hidden;
+
+    background: {
+        repeat: no-repeat;
+        position:center;
+        image: url(../img/index-form.jpg);
+        size: cover;
+    }
+}
+.container-switch label{
+    color: $color_white;
+}
+.form{
+    &-floating{
+        input{
+            background-color: #ffffff97;
+            border: none;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+    }
+    &-floating-txt{
+        color: $color_black;
+    }
+    &-inputs{
+        background-color: #00000047;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+.btn-form{
+    margin-bottom: 20px;
+    background-color: $color_black;
+    border:solid 1px $color_sec;
+    border-radius: 30px;
+    color: $color_white;
+    padding: 10px;
+    margin: 10px 34%;
+}

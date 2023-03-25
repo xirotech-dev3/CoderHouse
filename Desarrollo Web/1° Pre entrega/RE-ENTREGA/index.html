@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Home</title>
+
+        <link rel="stylesheet" href="css/navFooter.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <!--BARRA DE NAVEGACION--> 
+        <nav>
+
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="LOGO">
+            </div>
+
+            <ul class="nav-container">
+                <li class="nav-about">
+                    <a href="links/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-home">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-noticias" >
+                    <a href="links/noticias.html">Noticias</a>
+                </li>
+                <li class="nav-compras" >
+                    <a href="links/noticias.html">Shop</a>
+                </li>    
+
+                <li class="nav-social"><!--REDES-->
+                    <a href="#"><img src="img/icon-instagram.png" alt="instagram"></a> <!--INSTAGRAM-->
+                    <a href="#"><img src="img/icon-facebook.png" alt="facebook"></a> <!--FACEBOOK-->
+                    <a href="#"><img src="img/icon-twitter.png" alt="twitter"></a> <!--TWITTER-->
+                </li>
+            </ul>
+
+        </nav>
+        
+        
+
+        <!--BANNER-->
+        <section class="banner">
+            <div class="banner-txt-container">
+                <h1>Lleva tu curiosidad a nuevas alturas</h1>
+                <p>Explora las historias y artefactos aeroespaciales mas iconicos</p> 
+            </div>
+        </section>
+
+        <!--NOTICIAS DE LA SEMANA-->
+        <section class="article-week">
+            <h2>Mira nuestras noticias de la semana</h2>
+
+            <div class="article-week-container">
+
+                <div class="article-week-item big">
+                    <a href="links/tierraLuna.html">
+                        <img src="img/tierra-luna.jpg" alt="astronauta">
+                        <h3>De la tierra a la luna</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, non!</p>
+                    </a>
+                </div>
+    
+                <div class="article-week-item X4">
+
+                    <div class="article-week-item small">
+                        <a href="links/tierraLuna.html">
+                            <img src="img/tierra-luna.jpg" alt="astronauta">
+                            <h3>De la tierra a la luna</h3>
+                        </a>
+                    </div>
+                    <div class="article-week-item small">
+                        <a href="links/tierraLuna.html">
+                            <img src="img/tierra-luna.jpg" alt="astronauta">
+                            <h3>De la tierra a la luna</h3>
+                        </a>
+                    </div>
+                    <div class="article-week-item small">
+                        <a href="links/tierraLuna.html">
+                            <img src="img/tierra-luna.jpg" alt="astronauta">
+                            <h3>De la tierra a la luna</h3>
+                        </a>
+                    </div>
+                    <div class="article-week-item small">
+                        <a href="links/tierraLuna.html">
+                            <img src="img/tierra-luna.jpg" alt="astronauta">
+                            <h3>De la tierra a la luna</h3>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--FORMULARIO-->
+        <section class="formulario">
+            <h2>Subscribite a nuestro newsletter para tener las mejores noticias aeroespaciales</h2>
+            <div class="formulario-conteiner">
+                <form action="enviar.php" method="get" >
+                    <div class="form-inputs">
+                        <label for="nombre" >Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingese su nombre">
+            
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" placeholder="Ingese su nombre">
+            
+                        <label for="noticias">Que noticias quere recibir?</label>
+                        Noticias del Espacio.<input type="checkbox" name="noticias" id="espacio">
+                        Noticias del Aire.<input type="checkbox" name="noticias" id="aire">
+                        Noticias del Futuro<input type="checkbox" name="noticias" id="futuro">
+                        <input class="submit-btn" type="submit" id="Enviar ahora">
+                    </div>       
+                </form>
+                <img src="img/index-form-img.jpg" alt="We want you">
+            </div>
+        </section>
+
+        <!--PIE DE PAGINA-->
+        <footer>
+            <ul class="footer-container">
+                <li class="footer-logo">
+                    <img src="img/logo.png" alt="logo">
+                </li>
+                <li class="footer-about">
+                    <a href="links/nosotros.html">Nosotros</a>
+                </li>
+                <li class="footer-home">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="footer-social">
+                    <a href="#"><img src="img/icon-instagram.png" alt="instagram"></a> 
+                    <a href="#"><img src="img/icon-facebook.png" alt="facebook"></a> 
+                    <a href="#"><img src="img/icon-twitter.png" alt="twitter"></a> 
+                </li>
+                <li class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                </li>
+                <li class="footer-tradeMark">
+                    <span>© 2022 Grabac</span>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

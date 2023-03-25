@@ -1,0 +1,66 @@
+header{
+    background-color: aquamarine;
+    height: 90px;
+    padding: 10px;
+    border: 2px solid black;
+   /* position: sticky;*/
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+header ul li{
+    display: inline;
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    background-color: tomato;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+header ul li a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.cont-position{
+    border: 5px solid tomato;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+
+.relativo, .absoluto, .fixed{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.relativo{
+    background-color: turquoise;
+    position: relative;
+    left: 120px;
+    top: 50px;
+    z-index: 1;
+}
+.absoluto{
+    background-color: greenyellow;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 0;
+}
+.fixed{
+    background-color: tomato;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+footer{
+    margin-bottom: 900px;
+}

@@ -1,0 +1,18 @@
+@import '_var';
+
+.nosotros{
+    &-ppal{
+        @include banner-set($banner-size);
+        align-items: center;
+        background-image: url(../img/nosotros-p51-2.jpg);
+        &-txt{
+            background-color: $color_bg_banner;
+            text-align: center;
+            margin: 5%;
+            h1{
+                font-size: 30px;
+                color: $color_white;
+            }
+        }
+    }  
+}

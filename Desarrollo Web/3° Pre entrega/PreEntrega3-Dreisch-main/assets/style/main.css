@@ -1,0 +1,474 @@
+/*main*/ /*normalize*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/*nav*/
+.navbar {
+  background-color: #1d2951;
+}
+.navbar-logo-img {
+  width: 50px;
+  margin: 5px;
+}
+
+.nav-item {
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.nav-social img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+  .navbar-nav {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+  }
+}
+/*footer*/
+.footer {
+  background-color: #1d2951;
+  width: 100%;
+  margin-top: 60px;
+}
+.footer-container {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0;
+}
+.footer-container li {
+  display: inline;
+  margin: 15px 0;
+}
+.footer-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container a:hover {
+  color: #0291FF;
+}
+.footer-logo img {
+  width: 100px;
+  padding: 10px;
+}
+.footer-social img {
+  width: 50px;
+}
+.footer-tradeMark span {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+/*index*/
+.banner-ppal, .index-ppal {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../img/index-tierra.jpg);
+}
+.banner-ppal-txt, .index-ppal-txt {
+  background-color: rgba(60, 51, 51, 0.2901960784);
+  text-align: center;
+  margin: 5%;
+}
+.banner-ppal-txt h1, .index-ppal-txt h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+.banner-ppal-txt p, .index-ppal-txt p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .banner-ppal {
+    height: 400px;
+  }
+  .banner-ppal-txt h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .banner-ppal {
+    height: 600px;
+  }
+  .banner-ppal-txt h1 {
+    font-size: 50px;
+  }
+}
+/* index - noticias de la semana   */
+.article-week h2 {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  height: 96%;
+}
+.card-img-overlay {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+.card-txt-container {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  width: 100%;
+}
+.card-txt-container h5 {
+  font-size: 20px;
+}
+.card-txt-container p {
+  font-size: 15px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-container {
+  text-decoration: none;
+  color: #000000;
+}
+.card-body {
+  text-decoration: none;
+  color: #000000;
+}
+
+.link-btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.article-button {
+  border: solid 2px #0291FF;
+  border-radius: 30px;
+  background-color: #000000;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.art-index-btn p {
+  margin: 0;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .card-small p {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .mobile-disable {
+    display: none;
+  }
+  .card-txt-container h5 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .card {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .card-big {
+    width: 82.9%;
+  }
+}
+@media (min-width: 768px) {
+  .card-small {
+    margin: 5px auto;
+  }
+  .card-big {
+    height: 80%;
+    margin: 10% 0;
+  }
+}
+/*index-formulario*/
+.formulario {
+  margin-top: 30px;
+}
+.formulario form {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.formulario form legend {
+  text-align: center;
+  margin: 5px 50px;
+  color: #ffffff;
+}
+
+.form-container {
+  margin: 0 auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/index-form.jpg);
+  background-size: cover;
+}
+
+.container-switch label {
+  color: #ffffff;
+}
+
+.form-floating input {
+  background-color: rgba(255, 255, 255, 0.5921568627);
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.form-floating-txt {
+  color: #000000;
+}
+.form-inputs {
+  background-color: rgba(0, 0, 0, 0.2784313725);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.btn-form {
+  margin-bottom: 20px;
+  background-color: #000000;
+  border: solid 1px #0291FF;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px 34%;
+}
+
+/*noticias*/
+.article h2 {
+  font-size: 40px;
+  margin: 30px 0 30px 15%;
+}
+.article-item {
+  margin-left: 15%;
+  width: 70%;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  border: solid 2px #0291FF;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.article-img-container {
+  width: 240px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article-txt-container {
+  width: 70%;
+  margin-left: 5%;
+}
+.article-txt-container h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.article-button {
+  border: solid 2px #0291FF;
+  border-radius: 30px;
+  background-color: #000000;
+  padding: 10px;
+  color: #ffffff;
+}
+.article-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.articulo-1 {
+  background-image: url(../img/index-tierra.jpg);
+}
+
+.articulo-2 {
+  background-image: url(../img/sound-speedOfSound.jpg);
+}
+
+.articulo-3 {
+  background-image: url(../img/index-artemis.jpg);
+}
+
+.articulo-4 {
+  background-image: url(../img/birdman.jpg);
+}
+
+.articulo-5 {
+  background-image: url(../img/index-starlink.jpg);
+}
+
+@media (max-width: 768px) {
+  .article-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .article-img-container {
+    width: 100%;
+  }
+  .article-button {
+    margin-bottom: 10px;
+  }
+}
+/*      articulo    */
+.article-titulo {
+  text-align: center;
+  margin: 60px 0;
+}
+.article-titulo h1 {
+  font-size: 60px;
+}
+.article-noticia h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.article-noticia h3 {
+  font-size: 30px;
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+.article-txt-img-container {
+  margin: 30px 10%;
+  display: flex;
+  align-items: center;
+}
+.article-txt-img-container img {
+  border-radius: 30px;
+  width: 300px;
+}
+.article-txt-img-container p {
+  margin: 40px;
+}
+.article-video {
+  width: 80%;
+  max-width: 560px;
+  height: 356px;
+  margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+  .article-txt-img-container {
+    flex-direction: column;
+  }
+}
+.nosotros-ppal {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/nosotros-p51-2.jpg);
+}
+.nosotros-ppal-txt {
+  background-color: rgba(60, 51, 51, 0.2901960784);
+  text-align: center;
+  margin: 5%;
+}
+.nosotros-ppal-txt h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/*  _shop   */
+.shop-ppal {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/shop-banner.jpg);
+}
+.shop-ppal-txt {
+  background-color: rgba(60, 51, 51, 0.2901960784);
+  text-align: center;
+  margin: 5%;
+}
+.shop-ppal-txt h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+.shop-items-container {
+  margin: 20px auto;
+}
+.shop-ofertas h2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .banner-ppal {
+    height: 400px;
+  }
+  .banner-ppal-txt h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .banner-ppal {
+    height: 600px;
+  }
+  .banner-ppal-txt h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .mobile-disable-ofertas {
+    display: none;
+  }
+}
+.card-container {
+  text-decoration: none;
+  color: #000000;
+}
+.card-shop {
+  text-align: center;
+}
+.card-body h5 {
+  font-size: 25px;
+}
+.card-body h6, .card-body p {
+  font-size: 20px;
+}
+
+.oferta {
+  text-decoration: line-through;
+  color: #ff0000;
+}/*# sourceMappingURL=main.css.map */

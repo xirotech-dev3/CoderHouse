@@ -1,0 +1,93 @@
+main{
+    margin-left: 15%;
+    width:70% ;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.item-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.item-img img{
+    width: 360px;
+}
+
+.item-text-container{
+    text-align: center;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.item-text-container h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.item-price-container{
+    font-size: 30px;
+}
+.item-price-container .discount-price{
+    display: none;
+}
+.credit-cards ul{
+   list-style: none;
+   padding: 0;
+}
+.credit-cards-container li{
+    display: inline;
+}
+.credit-cards-container li img{
+    height: 25px;
+    margin-left: 10px;
+}
+.item-description-container p{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.table-container{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.shipping-header{
+    display: flex;
+    justify-content: center;
+}
+.shipping-header img{
+    height: 30px;
+    margin-right: 10px;
+}
+.shipping-container input, button{
+    padding: 10px;
+}
+.shipping-container button{
+    background-color: #b0b0b0;
+    border: 1px solid black;
+}
+.shipping-container a{
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.item-description-container{
+    margin-bottom: 30px;
+}
+.buy{
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+}
+.related-items h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.card{
+    width: 300px;
+}
+.card-title{
+    width: 100%;
+    height: 30px;
+}

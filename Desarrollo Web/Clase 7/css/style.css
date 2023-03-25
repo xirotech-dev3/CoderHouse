@@ -1,0 +1,61 @@
+
+.boxMedia{
+    background-color: aqua;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+ /*   grid-template-rows: 100px 100px;*/
+}
+
+.boxMediaFlex{
+    background-color: tomato;
+    padding: 20px;
+/*
+    display: flex;
+    flex-direction: column;
+*/
+}
+.boxRem{
+    background-color: aquamarine;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.boxRem h2{
+    font-size: 4rem;
+}
+.boxRem h3{
+    font-size: 3rem;
+}
+.boxRem h4{
+    font-size: 20px;
+    background-color: orange;
+}
+.boxRem p{
+    font-size: 2rem;
+}
+
+
+@media (min-width: 768px){
+    .boxMedia{
+        background-color: greenyellow;
+        grid-template-columns: 1fr 2fr;
+    }
+    .boxMediaFlex{
+        display: flex ;
+        gap: 20px;
+    }
+    .boxMediaFlex h2{
+        min-width: 300px;
+    }
+}
+
+
+
+
+/*
+@media (min-width:992px) and (max-width: 1200px){
+    .boxMedia{
+        background-color: tomato;
+    }
+}
+*/

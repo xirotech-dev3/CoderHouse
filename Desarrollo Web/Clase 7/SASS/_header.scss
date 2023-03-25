@@ -1,0 +1,33 @@
+.header{
+    $colorMenu: green; //Var local
+    background-color: $colorPrincipal;
+    &__logo{
+        width: 100px;
+        p{
+            color: red;
+            font: {
+                family: sans-serif;
+                weight: 700;
+                size: 24px;
+                style: normal;
+            }
+        }
+    }
+    &__menu{
+        display: inline-block;
+        ul li{
+            list-style: none;
+        }
+        a{
+            color: $colorMenu;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    &__search{
+        input{
+            width: 150px;
+        }
+    }
+}
