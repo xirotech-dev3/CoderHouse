@@ -1,0 +1,101 @@
+@import '_var';
+/*index*/
+.banner, .index{
+    &-ppal{
+        @include banner-set($banner-size);
+        background-image: url(../img/fondo.jpg);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        &-txt{
+            background-color: $color_bg_banner;
+            text-align: center; 
+            width: 40%;
+            border-top-right-radius: 82px;
+            border-top: solid;
+            border-right: solid;
+            border-color: red;
+            h1{
+                font-size: 35px;
+                color: $color_white;
+                padding-right: 35px;
+            }
+            p{
+                font-size: 20px;
+                color: $color_white;
+            }
+        }
+    }  
+}
+@include banner-responsive;
+
+@media (max-width: map-get($_breakpoints, md)){
+    .banner-ppal-txt{
+        width: 55%;
+        h1{
+        font-size: 30px;
+        }
+    }
+}
+@media (max-width: map-get($_breakpoints, sm)){
+    .banner-ppal-txt{
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        h1{
+        font-size: 25px;
+        }
+    }
+}
+
+/*carreras*/
+#details{
+    display: none;
+    align-items : center;
+    justify-content : space-evenly;
+}
+.races-container{
+    h2{
+        text-align: left;
+        margin: 2% 5%;
+        font-size: 30px
+    }
+    .race{
+        width: 100%;
+        height: 40vh;
+        background: {
+            repeat: no-repeat;
+            position:center;
+            image: url(../img/foro-sol-view-mexican-gp.jpg);
+            size: cover;
+        }
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        h3{
+            width: 100%;
+            color: #ffffff;
+            background-color: #ffffff97;
+            text-align: center;
+        }
+        button{
+            position: absolute;
+            bottom: -26%;
+            margin: 30px;
+            text-decoration: none;
+            border:solid 2px #fff;
+            border-radius: 30px;
+            background-color: #ffffffbf;
+            padding: 10px;
+        }
+
+    }
+}
+
+.layout-circuito{
+    width: 35%;
+    img{
+        width: 100%;
+    }
+}

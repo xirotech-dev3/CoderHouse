@@ -1,0 +1,74 @@
+@import '_var';
+
+/*      articulo    */
+.article{
+    &-cuerpo{
+        margin: 20px 0;
+    }
+    &-titulo{
+        text-align: center;
+        margin: 60px 0 ;
+        h1{
+            font-size: 60px;
+        }
+    }
+    &-noticia{
+        margin: 30px 0;
+        h2{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        h3{
+            font-size: 30px;
+            margin-left: 15%;
+            margin-bottom: 30px;
+        }
+    }
+    &-txt-img-container{
+        margin:0 10%;
+        display: flex;
+        align-items: center;
+        img{
+            border-radius: 30px;
+            width: 300px;
+        }
+        p{
+            margin: 40px;
+            font-size: 20px;
+        }       
+    }
+    &-video{
+        width: 80%;
+        max-width: 800px;
+        height: 400px;
+        margin: 10px auto;
+    }
+    &-img-container{
+        width: 100%;
+        img{
+            width: 80%;
+            margin: 10px 10%;
+            border-radius: 30px;
+        }
+    }
+}
+video{
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1024px){
+    .article-txt-img-container{
+        flex-direction: column;   
+        img{
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: map-get($_breakpoints, sm)){
+    .article-video{
+        height: 300px;
+    }
+}
+

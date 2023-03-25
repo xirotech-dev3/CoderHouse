@@ -1,0 +1,67 @@
+@import '_var';
+/*noticias*/
+.news{
+    h2{
+        font-size: 40px;
+        margin: 30px 0 30px 15%;
+    }
+    &-item{
+        margin-left: 15%;
+        width: 70%;
+        display: flex;
+        align-content: space-around;
+        align-items: center;
+        margin-bottom: 40px ;
+        border: solid 2px $color_sec;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    &-img-container{
+        width: 240px;
+        height: 240px;
+        background: {
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+       
+    }
+    &-txt-container{
+        width: 70%;
+        margin-left: 5%;
+        h3{
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    }   
+}
+    
+.articulo-1{
+    background-image: url(../img/index-tierra.jpg);
+}
+.articulo-2{
+    background-image: url(../img/sound-speedOfSound.jpg);
+}
+.articulo-3{
+    background-image: url(../img/index-artemis.jpg);
+}
+.articulo-4{
+    background-image: url(../img/birdman.jpg);
+}
+.articulo-5{
+    background-image: url(../img/index-starlink.jpg);
+}
+@media (max-width:  map-get($_breakpoints, sm)){  
+    .news{
+        &-item{
+            flex-direction: column;
+            align-items: center;
+        }
+        &-img-container{
+            width: 100%;
+        }
+    }
+    .btn-txt{
+        margin-bottom: 10px;
+    }
+}

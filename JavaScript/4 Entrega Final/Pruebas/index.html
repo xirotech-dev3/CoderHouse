@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>F1 Tickets</title>
+    
+  <!--Font Popins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/style/main.css">
+  
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img class="navbar-logo-img" src="./assets/img/icon-F1.png" alt="Formula 1">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-lg-0">
+                    <li class="nav-item nav-about">
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item nav-compras" >
+                        <a href="#" class="cart" title="Shop" target="_blank" rel="nofollow">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">1</span>
+                        </a>
+                    </li>   
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Banner principal-->
+    <section class="banner">
+        <div class="container-fluid banner-ppal">
+            <div class="banner-ppal-txt">
+                <h1> FIA FORMULA ONE WORLD CHAMPIONSHIP TICKETS</h1> 
+            </div>
+        </div>
+    </section>
+
+    <section class="races-container">
+        <h2>Races in:</h2>
+
+        <section class="race-container">
+            <div class="race mexico">            
+                <h3>FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023</h3>
+                <button id="chau">Ver mas</button>
+            </div>
+            <div id="details">
+                <div class="detalleCircuito">
+                    <p>  Fecha:  26 - 29   OCT</p>
+                    <p>  Tribuna: Foro Sol  </p> 
+                    <p>  Precio por los 3 dias: <b>$ 2500</b> </p>
+                    <button type="button" class="btn btn-primary">Comprar ahora</button>
+                </div>
+                <div class="layout-circuito">
+                    <img src="./assets/img/image.png" alt="circuit">
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+
+    <script>
+        const seccion = document.getElementById("cart_menu_num")
+        //seccion.style.display = 'none'
+        // seccion.innerHTML =`3`
+        // seccion.style.display = 'none'
+        // seccion.style.display = ''
+        // seccion.innerHTML =`3`
+
+        
+        let boton = document.getElementById('chau');
+        boton.addEventListener("click", showAndHide);
+        
+        function showAndHide(){
+            let show = document.getElementById('details');
+             if (show.style.display == 'none') {
+                show.style.display = 'flex';
+            } else {
+                show.style.display = 'none';
+            }
+        }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>

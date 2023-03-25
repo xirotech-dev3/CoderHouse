@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+        <title>Generador QR con Javascript</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+        
+    </head>
+    <body>
+        <input id="text" type="text" value="https://www.ribosomatic.com" style="width:80%" /><br />
+        <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="qrcode.js"></script>
+        
+        <script type="text/javascript">
+        // Genera el objeto qrcode
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 100,
+            height : 100
+        });
+        // Funcion para crear el codigo
+        function makeCode () {
+            var elText = document.getElementById("text");
+            if (!elText.value) {
+                alert("Ingresa un texto");
+                elText.focus();
+                return;
+            }
+            qrcode.makeCode(elText.value);
+        }
+        // Al cargar crear el qr inicial
+        makeCode();
+        // Al pulsar teclar Enter, genera en QR
+        $("#text").
+            on("blur", function () {
+                makeCode();
+            }).
+            on("keydown", function (e) {
+                if (e.keyCode == 13) {
+                    makeCode();
+                }
+            });
+        </script>
+    </body>
+</html>

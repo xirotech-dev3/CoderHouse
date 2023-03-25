@@ -1,0 +1,116 @@
+@import '_var';
+
+/*sell*/
+.sell{
+    &-img{
+        width: 90%;
+        margin: 5px 5%;
+    }
+    &-aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        h2{
+            text-align: center;
+        }
+        h2, h3, h4{
+            color: $color-black;
+            margin: 2% 0;
+            font-size: 28px;
+        }
+    }
+    &-card-list{
+        list-style: none;
+        li{
+            display: inline-block;
+            img{
+                width: 40px;
+            }
+        }
+    }
+    &-shipping-list{
+        list-style: none;
+        li{
+            display: inline-block;
+            img{
+                width: 50px;
+            }
+        }
+    }
+    &-description{
+        width: 90%;
+        margin: 20px 5%;
+        h2{
+            color: $color-black;
+        }
+        table{
+            width: 80%;
+            margin: 10px 10%;
+        }
+    }
+    &-form{
+        width: 50%;
+        margin: 10% 25%;
+    }
+        
+}
+@media(min-width: map-get($_breakpoints, md)){
+    .sell-description{
+        table{
+            width: 50%;  
+            margin: 15px 25%;
+        }
+    }
+}
+.form{
+    &-sell{
+        margin: 10%;
+    }
+    &-container-sell{
+        legend{
+            color: $color-black;
+        }
+        .form-inputs{
+            width: 50%;
+            .btn-form{
+                margin: 10px 50%;
+            }
+        }
+    }
+}
+#legend-sell{
+    color: $color-black;
+}
+@media(max-width: map-get($_breakpoints, md)){
+    .form{
+        &-container-sell{
+            .form-inputs{
+                width: 80%;
+            }
+        }
+    }
+}
+@media(max-width: map-get($_breakpoints, sm)){
+    .form{
+        &-container-sell{
+            .form-inputs{
+                width: 90%;
+            }
+        }
+    }
+    .formulario{
+        form{
+            margin: 0;
+        }
+    }
+}
+
+.oferta{
+    text-decoration: line-through;
+    color: $color_red;
+    font-size: 28px;
+}
+.p10{
+    padding: 10%;
+}
