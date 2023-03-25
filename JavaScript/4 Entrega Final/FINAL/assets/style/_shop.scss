@@ -1,0 +1,89 @@
+@import '_var';
+/*  _shop   */
+.shop{
+    &-ppal{
+        @include banner-set(350px);
+        background-image: url(../img/shop-banner.jpeg);
+        &-txt{
+            background-color: $color_bg_banner;
+            text-align: center;
+            width: 100%;
+            h1{
+                margin: 10px;
+                font-size: 30px;
+                color: $color_white;
+            }
+        }
+    }
+    &-items-container{
+        height: fit-content;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-items-more{
+        display: flex;
+    }
+    &-ofertas{
+        margin: 40px 0;
+        h2{
+            margin-left: 12%;
+            margin-bottom: 20px
+        }
+
+    }  
+}
+
+@include banner-responsive(300px);
+.col-top{   
+    margin-bottom: 20px;
+}
+.shop-cart{
+    &-total{
+    display: flex;
+    justify-content: space-between;
+    }
+    &-btn{
+        display: flex;
+    }
+}
+.card{
+    margin-bottom: 5%;
+    &-img-top{
+        max-width: 520px;
+    }
+    &-container{
+        text-decoration: none;
+        color: $color_black;
+    }
+    &-shop{
+        text-align: center;
+    }
+    &-body{
+        h5{
+            font-size: 25px;
+        }
+        h6 , p{
+            font-size: 20px;
+        }
+    }
+    &-button{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+    }
+}
+.cantidades{
+    width:30px;
+}
+.oferta{
+    text-decoration: line-through;
+    color: $color_red;
+    font-size: 28px;
+}
+.side-img{
+    margin: auto;
+}
