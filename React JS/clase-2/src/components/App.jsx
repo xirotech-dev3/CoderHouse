@@ -1,13 +1,15 @@
 import './App.css'; 
 import { Saludo } from './Saludo/Saludo.jsx';
+import { Count } from './Count/Count.jsx'
+
 export const App = () =>{
   return(
     <div>
-      <Saludo mensaje={"Hola, buenos dias"}/>
+      <Count />
+      <Saludo mensaje1={"Hola, buenos dias"} mensaje2={"Hola, buenas noches"}/>
     </div>
   )
 }
-//2:17
 
 // export const App = ()  =>{
 

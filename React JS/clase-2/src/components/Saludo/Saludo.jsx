@@ -1,7 +1,8 @@
-export const Saludo = ({mensaje}) => {
+export const Saludo = ({mensaje1, mensaje2}) => {
   return (
-    <div>
-      <p>{mensaje}</p>
-    </div>
+    <> 
+      <p>{mensaje1}</p>
+      <p>{mensaje2}</p>
+    </>
   )
 };
