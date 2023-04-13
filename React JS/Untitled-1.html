@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expansión y Contracción de Contenedores con JavaScript</title>
+</head>
+<body>
+    <section class="seccion-container-informacion">
+      <div class="container">
+        <div class="container-informacion">
+          <h3 class="titulo-informacion" data-id="1">DELEGACIONES <span>+</span></h3>
+          <div class="mostrar" style="display: none;" data-id="1">
+            <p>hola 1</p>
+          </div>
+        </div>
+        <div class="container-informacion">
+          <h3 class="titulo-informacion" data-id="2">INFORMACIÓN IMPORTANTE <span>+</span></h3>
+          <div class="mostrar" style="display: none;" data-id="2">
+            <p>hola 2</p>
+          </div>
+        </div>
+        <div class="container-informacion">
+          <h3 class="titulo-informacion" data-id="3">CONVENIOS <span>+</span></h3>
+          <div class="mostrar" style="display: none;" data-id="3">
+            <p>hola 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Obtener todos los elementos de título
+      const titulos = document.querySelectorAll(".titulo-informacion");
+      // Agregar un evento de clic a cada título
+    titulos.forEach((titulo) => {
+      titulo.addEventListener("click", () => {
+        // Obtener el ID único del título
+        const id = titulo.getAttribute("data-id");
+            
+        // Obtener el contenido correspondiente
+        const contenido = document.querySelector(`[data-id="${id}"].mostrar`);
+        // Cambiar la visibilidad del contenido
+        if (contenido.style.display === "none") {
+          contenido.style.display = "block";
+          titulo.querySelector("span").textContent = "-";
+        } else {
+          contenido.style.display = "none";
+          titulo.querySelector("span").textContent = "+";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
